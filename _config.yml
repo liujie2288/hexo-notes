@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Jay's Blog
-subtitle: 'Jay Zone'
+title: Jay
+subtitle: 'keep runing'
 description: '记录个人生活，学习经历'
 keywords: 'zone,blog,javascript,js,html,css'
 author: Jay Liu
@@ -101,3 +101,10 @@ deploy:
   type: git
   repo: https://github.com/fe-jay/fe-jay.github.io.git
   branch: master
+
+# 文章字数统计
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
