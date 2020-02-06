@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://jayzone.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -98,9 +98,12 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/fe-jay/fe-jay.github.io.git
-  branch: master
+  - type: git
+    repo: 
+      github: https://github.com/fe-jay/fe-jay.github.io.git
+      coding: https://e.coding.net/fe-jay/hexo-notes.git
+    branch: master
+  - type: baidu_url_submitter
 
 # 文章字数统计
 symbols_count_time:
@@ -108,3 +111,16 @@ symbols_count_time:
   time: true
   total_symbols: true
   total_time: true
+
+# sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+# 百度链接提交-主动推送配置
+baidu_url_submit:
+  count: 3 ## 提交最新的一个链接
+  host: jayzone.cn ## 在百度站长平台中注册的域名
+  token: 40GnttjZKMLpfZPQ ## 请注意这是您的秘钥，所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
