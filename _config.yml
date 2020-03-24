@@ -124,3 +124,16 @@ baidu_url_submit:
   host: jayzone.cn ## 在百度站长平台中注册的域名
   token: 40GnttjZKMLpfZPQ ## 请注意这是您的秘钥，所以请不要把博客源代码发布在公众仓库里!
   path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+
+# algolia搜索服务
+# algolia:
+#   applicationID: 3TK0EE8ROU
+#   apiKey: 451a824dceffc1ebfea27f2e683cec55
+#   indexName: 'hexo-notes'
+#   chunkSize: 5000
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
